@@ -5,7 +5,7 @@ spring:
 server:
   port: 8888
 
-client:
+say-hello:
   ribbon:
     eureka:
       enabled: false
