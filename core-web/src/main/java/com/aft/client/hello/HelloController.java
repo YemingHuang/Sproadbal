@@ -1,8 +1,7 @@
-package com.aft.client;
+package com.aft.client.hello;
 
+import com.aft.client.config.LoadBalanceConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
@@ -13,10 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 @RestController
-@SpringBootApplication
 @EnableDiscoveryClient
-@RibbonClient(name = "feature-hello-sayer", configuration = ClientConfiguration.class)
-public class ClientApplication {
+@RibbonClient(name = "feature-hello-sayer", configuration = LoadBalanceConfiguration.class)
+public class HelloController {
 
     @LoadBalanced
     @Bean
@@ -33,7 +31,4 @@ public class ClientApplication {
         return String.format("%s, %s!", greeting, name);
     }
 
-    public static void main(String[] args) {
-        SpringApplication.run(ClientApplication.class, args);
-    }
 }

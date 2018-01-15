@@ -15,9 +15,9 @@ import java.util.Random;
 @RestController
 @EnableEurekaClient
 @SpringBootApplication
-public class ServerApplication {
+public class HelloApplication {
 
-    private static Logger log = LoggerFactory.getLogger(ServerApplication.class);
+    private static Logger log = LoggerFactory.getLogger(HelloApplication.class);
 
     @RequestMapping(value = "/greeting")
     public String greet() {
@@ -37,6 +37,6 @@ public class ServerApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(ServerApplication.class, args);
+        SpringApplication.run(HelloApplication.class, args);
     }
 }
