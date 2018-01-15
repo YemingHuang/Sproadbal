@@ -3,6 +3,7 @@ package com.aft.client;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -11,6 +12,7 @@ import org.springframework.web.client.RestTemplate;
 
 @RestController
 @SpringBootApplication
+@RibbonClient(name = "client", configuration = ClientConfiguration.class)
 public class ClientApplication {
 
     @Bean
