@@ -1,15 +1,24 @@
 spring:
-  application:
-    name: client
+    application:
+        name: core-web
 
 server:
-  port: 8888
+    port: 8888
+
+spring:
+    mvc:
+        view:
+            prefix: /WEB-INF/jsp/
+            suffix: .jsp
 
 eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-    healthcheck:
-      enabled: true
-    lease:
-      duration: 5
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:8761/eureka/
+        healthcheck:
+            enabled: true
+        lease:
+            duration: 5
+
+welcome:
+    message: AFT kicks butts

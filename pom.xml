@@ -12,6 +12,7 @@
         <module>core-web</module>
         <module>core-service-reg</module>
         <module>feature-hello-sayer</module>
+        <module>feature-thing</module>
     </modules>
 
     <repositories>
