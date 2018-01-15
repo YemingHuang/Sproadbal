@@ -10,7 +10,7 @@
 
     <modules>
       <module>client</module>
-      <module>server</module>
+      <module>feature-hello-sayer</module>
       <module>core-service-reg</module>
     </modules>
 </project>

@@ -15,7 +15,7 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 @SpringBootApplication
 @EnableDiscoveryClient
-@RibbonClient(name = "server", configuration = ClientConfiguration.class)
+@RibbonClient(name = "feature-hello-sayer", configuration = ClientConfiguration.class)
 public class ClientApplication {
 
     @LoadBalanced
@@ -29,7 +29,7 @@ public class ClientApplication {
 
     @RequestMapping("/hi")
     public String hi(@RequestParam(value="name", defaultValue="Gilgamesh") String name) {
-        String greeting = this.resttTemplate.getForObject("http://server/greeting", String.class);
+        String greeting = this.resttTemplate.getForObject("http://feature-hello-sayer/greeting", String.class);
         return String.format("%s, %s!", greeting, name);
     }
 
