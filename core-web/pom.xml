@@ -89,7 +89,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>com.aft</groupId>
+            <artifactId>feature-thing</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+    </dependencies>
 
 	<dependencyManagement>
 		<dependencies>

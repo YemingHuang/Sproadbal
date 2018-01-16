@@ -1,4 +1,5 @@
-package com.aft.client.thing;
+package com.aft.thing;
+
 
 import org.springframework.stereotype.Repository;
 

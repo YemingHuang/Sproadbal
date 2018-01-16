@@ -1,9 +1,9 @@
-package com.aft.client.thing;
+package com.aft.thing;
 
 import lombok.*;
 
 @AllArgsConstructor
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor(access = AccessLevel.PUBLIC)
 @Getter
 @Setter
 @EqualsAndHashCode(callSuper = false)
