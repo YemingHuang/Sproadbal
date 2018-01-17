@@ -1,4 +1,4 @@
-package com.aft.thing;
+package yeminghuang.thing;
 
 
 import org.springframework.stereotype.Repository;

@@ -1,4 +1,4 @@
-package com.aft.client;
+package yeminghuang.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

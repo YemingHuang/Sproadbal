@@ -11,8 +11,8 @@ If you run WebApplication from main class as it is, Intellij will look for `$ROO
 To overcome this weirdness, you will have to explicitly change the working directory in run configuration to `$MODULE_DIR$`
 
 ### Todo
-1. Setup example jsp feature
-2. Selenium Test
-3. Some DB connection
-4. Login page
-5. Spring security
+<s>Setup example jsp feature</s>
+* Selenium Test
+* Some DB connection
+* Login page
+* Spring security

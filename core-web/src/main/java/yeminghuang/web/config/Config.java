@@ -1,4 +1,4 @@
-package com.aft.client.config;
+package yeminghuang.web.config;
 
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
